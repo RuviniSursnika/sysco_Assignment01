@@ -25,7 +25,7 @@ public class LoginTest extends TestBase {
    // @Test(priority = 0)
 
 
-    @Test(priority = 1)
+    @Test
     public void testLogin() throws Exception {
 
 
