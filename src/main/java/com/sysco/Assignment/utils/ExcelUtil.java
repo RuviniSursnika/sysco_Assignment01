@@ -1,7 +1,6 @@
 package com.sysco.Assignment.utils;
 
-//import com.sysco.Assignment.data.FirstData;
-//import com.sysco.Assignment.data.HomeData;
+
 import com.syscolab.qe.core.excelUtils.ReadExcel;
 import com.sysco.Assignment.data.LoginData;
 

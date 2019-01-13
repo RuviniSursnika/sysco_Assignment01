@@ -29,12 +29,6 @@ public class LoginTest extends TestBase {
     public void testLogin() throws Exception {
 
 
-
-        // Sample way to retrieve data from excel
-      // LoginData loginData = ExcelUtil.getLoginData("Login");
-
-       //System.out.println(loginData.toString());
-
         //Launch the web page
         First.searchLoginLink();
 

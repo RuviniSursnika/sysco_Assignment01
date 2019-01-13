@@ -1,11 +1,8 @@
 package com.sysco.Assignment.functions;
 
-import com.sysco.Assignment.common.Constants;
 import com.sysco.Assignment.data.LoginData;
 import com.sysco.Assignment.pages.LoginPage;
-import com.sysco.Assignment.utils.DriverSetUpUtil;
 import com.sysco.Assignment.utils.ExcelUtil;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
 
 public class Login  {

@@ -39,10 +39,6 @@ public class Home {
 
 
         if (emptyValue == true) {
-            //if (cartValue.equals(0)){
-
-            //
-            // homePage.clickCart();
 
             System.out.println("There is no any items in the cart");
             homePage.clickBtnShoppingCartClose();
@@ -51,7 +47,6 @@ public class Home {
             String cartValue = homePage.searchCartValue();
             System.out.println("cv " + cartValue);
 
-            // homePage.clickCart();
 
             int cv = Integer.parseInt(cartValue);
             System.out.println("CV " + cv);

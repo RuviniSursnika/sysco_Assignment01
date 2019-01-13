@@ -3,7 +3,6 @@ package com.sysco.Assignment.pages;
 import com.sysco.Assignment.utils.PageBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
 import java.util.List;
 import java.util.Random;
 
@@ -21,38 +20,22 @@ public class ItemPage extends PageBase {
 
     public void clickOnItem(){
 
-        //syscoLabUIOgm.sleep(5);
-
         List<WebElement> itemList = syscoLabUIOgm.findElements(lnkItem);
-        //System.out.println("Size List "+ sizeList.toString());
 
         Random randItem = new Random();
-        //System.out.println("Size "+ rand);
-
-        //syscoLabUIOgm.findElement(lnkItem).click();
-
         int randomItem = randItem.nextInt(itemList.size());
         System.out.println("a "+randItem.toString());
 
         itemList.get(randomItem).click();
         System.out.println("randomItem "+ randomItem);
 
-//        syscoLabUIOgm.sleep(5);
-//        syscoLabUIOgm.scrollUp();
-//        syscoLabUIOgm.click(lnkItem);
-
     }
 
     public void clickOnSize(){
 
        List<WebElement> sizeList = syscoLabUIOgm.findElements(lnkSize);
-       //System.out.println("Size List "+ sizeList.toString());
 
         Random rand = new Random();
-        //System.out.println("Size "+ rand);
-
-        //syscoLabUIOgm.findElement(lnkSize).click();
-
         int randomValue = rand.nextInt(sizeList.size());
         sizeList.get(randomValue).click();
         System.out.println("randomValue "+ randomValue);

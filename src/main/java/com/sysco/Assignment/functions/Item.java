@@ -52,13 +52,10 @@ public class Item {
      public static boolean isDisplayedName (){
         homePage.clickCart();
 
-//        String itemName = LoginData.item;
-//        System.out.println("ItemName "+ itemName);
-
-         String searchItemName = itemPage.searchItem();
+        String searchItemName = itemPage.searchItem();
 
         String displyaedItem = itemPage.searchCartItem();
-         System.out.println("diaplyaedItem "+ displyaedItem);
+        System.out.println("diaplyaedItem "+ displyaedItem);
 
          if (searchItemName.equalsIgnoreCase(displyaedItem)){
              System.out.println("Item Name is correct");
@@ -71,30 +68,12 @@ public class Item {
      }
 
 
-
-//         if (itemName.equals(displyaedItem)){
-//             System.out.println("Correct order is displayed");
-//             return true;
-//         }
-//         else {
-//             return false;
-//         }
-
-
-
      public static void isDisplayedPrice(){
          String price = LoginData.price;
          System.out.println("price "+price);
 
          String displayedPrice = itemPage.searchPrice();
          System.out.println("displayedPrice "+displayedPrice);
-
-//         if (price.equals(displayedPrice)){
-//             System.out.println("Correct price is displayed");
-//             return true;
-//         }
-//         else
-//             return false;
 
      }
 
