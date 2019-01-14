@@ -15,6 +15,10 @@ public class LoginData {
     public static String firstName;
     public static String lastName;
     public static String postCode;
+    public static String telephone;
+    public static String company;
+    public static String address;
+
 
 
 
@@ -112,6 +116,30 @@ public class LoginData {
 
     public static void setPostCode(String postCode) {
         LoginData.postCode = postCode;
+    }
+
+    public static String getTelephone() {
+        return telephone;
+    }
+
+    public static void setTelephone(String telephone) {
+        LoginData.telephone = telephone;
+    }
+
+    public static String getCompany() {
+        return company;
+    }
+
+    public static void setCompany(String company) {
+        LoginData.company = company;
+    }
+
+    public static String getAddress() {
+        return address;
+    }
+
+    public static void setAddress(String address) {
+        LoginData.address = address;
     }
 
 

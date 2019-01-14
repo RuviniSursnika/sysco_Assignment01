@@ -9,25 +9,26 @@ import com.sysco.Assignment.functions.*;
 import com.sysco.Assignment.utils.ExcelUtil;
 import com.sysco.Assignment.utils.PageBase;
 import com.sysco.Assignment.utils.TestBase;
+import javafx.scene.layout.Priority;
 import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 
 public class LoginTest extends TestBase {
 
     @BeforeClass
     public void init(ITestContext iTestContext) {
-        iTestContext.setAttribute("feature", "Login - ValidLogin");
+        iTestContext.setAttribute("feature", "Online Shopping -Checkout");
     }
 
-   // @Test(priority = 0)
+    // @Test(priority = 0)
 
 
-    @Test
-    public void testLogin() throws Exception {
-
+    @Test(priority = 0)
+    public void LoginToApplication() throws Exception {
 
         //Launch the web page
         First.searchLoginLink();
@@ -37,9 +38,14 @@ public class LoginTest extends TestBase {
 
 
         //Navigate to home page
-         Assert.assertTrue(Home.isDisplayedUserName());
+        Assert.assertTrue(Home.isDisplayedUserName());
+    }
 
-         //Verify Cart Value is empty
+    @Test(priority = 1)
+    public void SelectItem() throws Exception {
+
+
+        //Verify Cart Value is empty
         Home.isCartEmpty();
 
         //Click on women category and navigate to the women category Page
@@ -61,12 +67,34 @@ public class LoginTest extends TestBase {
         //close Shopping cart Section
         Item.NavigateToCheckOut();
 
-        //Enter first name and last name in checkout page
-        //CheckOut.isDisplayedFirstNameAndLastName();
+    }
 
-        //set Post Code
-       // CheckOut.setValidPostCode();
+    @Test(priority = 2)
+    public void FillCheckoutDetails() {
+
+        //Verify First name is displayed
+        CheckOut.isDisplayedFirstName();
+
+        //Verify Last name is displayed
+        CheckOut.isDisplayedLastName();
+
+        //set Post Code, Telephone and click Continue Button
+        CheckOut.setCheckOutDetails();
 
 
     }
+
+    @Test(priority = 3)
+    public void SelectCreditCardSection() {
+
+        //Credit card section
+        Payment.ClickCreditCardSection();
+
+    }
+
+
 }
+
+
+
+

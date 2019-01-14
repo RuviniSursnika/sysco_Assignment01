@@ -69,8 +69,8 @@ public class Item {
 
 
      public static void isDisplayedPrice(){
-         String price = LoginData.price;
-         System.out.println("price "+price);
+//         String price = LoginData.price;
+//         System.out.println("price "+price);
 
          String displayedPrice = itemPage.searchPrice();
          System.out.println("displayedPrice "+displayedPrice);
