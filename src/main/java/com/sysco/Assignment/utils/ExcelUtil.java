@@ -13,4 +13,10 @@ public class ExcelUtil {
         return loginData;
     }
 
+//    public static LoginData getTestCaseData(String key) {
+//        Object testObject = ReadExcel.getDataFromExcelSheet(key, System.getProperty("user.dir") + "/src/main/resources/testData/TestData.xls", 1, LoginData.class);
+//        LoginData loginData = (LoginData) testObject;
+//        return loginData;
+//    }
+
 }

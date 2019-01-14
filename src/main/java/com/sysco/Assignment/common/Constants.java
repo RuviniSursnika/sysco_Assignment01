@@ -10,5 +10,7 @@ public class Constants {
     public static final String APP_OS = System.getProperty("app.os", "WIN10");
     public static final String APP_BROWSER = System.getProperty("app.browser", "chrome");
     public static final String BASE_URL = System.getProperty("base.url", "https://www.theathletesfoot.com.au/");
+    public static final String EXPECTED_MSG_REQUIRED_FIELD = System.getProperty("This is a required field.");
+    public static final String EXPECTED_MSG_INCORRECT_LOGIN_CREDENTIALS = System.getProperty("You did not sign in correctly or your account is temporarily disabled.");
 
 }

@@ -4,6 +4,12 @@ public class LoginData {
 
 
     public static String ref;
+//    public static String email1;
+//    public static String password1;
+//    public static String email2;
+//    public static String password2;
+//    public static String email3;
+//    public static String password3;
     public static String email;
     public static String password;
     public static String username;
@@ -141,6 +147,56 @@ public class LoginData {
     public static void setAddress(String address) {
         LoginData.address = address;
     }
+/*
+
+    public static String getEmail1() {
+        return email1;
+    }
+
+    public static void setEmail1(String email1) {
+        LoginData.email1 = email1;
+    }
+
+    public static String getPassword1() {
+        return password1;
+    }
+
+    public static void setPassword1(String password1) {
+        LoginData.password1 = password1;
+    }
+
+    public static String getEmail2() {
+        return email2;
+    }
+
+    public static void setEmail2(String email2) {
+        LoginData.email2 = email2;
+    }
+
+    public static String getPassword2() {
+        return password2;
+    }
+
+    public static void setPassword2(String password2) {
+        LoginData.password2 = password2;
+    }
+
+    public static String getEmail3() {
+        return email3;
+    }
+
+    public static void setEmail3(String email3) {
+        LoginData.email3 = email3;
+    }
+
+    public static String getPassword3() {
+        return password3;
+    }
+
+    public static void setPassword3(String password3) {
+        LoginData.password3 = password3;
+    }
+*/
 
 
 }
