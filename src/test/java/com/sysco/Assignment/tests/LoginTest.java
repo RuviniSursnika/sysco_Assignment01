@@ -28,11 +28,11 @@ public class LoginTest extends TestBase {
 
     @BeforeClass
     public void init(ITestContext iTestContext) {
-        iTestContext.setAttribute("feature", "Online Shopping -Checkout");
+        iTestContext.setAttribute("feature", "Online Shopping - Checkout");
     }
 
     @Test(priority = 0)
-    public void loginToApplication(){
+    public void LoginToApplication(){
         SoftAssert softAssert = new SoftAssert();
         //Login.loginAndNavigateToHomePage();
 
@@ -59,6 +59,8 @@ public class LoginTest extends TestBase {
         //loginData = ExcelUtil.getLoginData("Login");
         First.searchLoginLink();
         softAssert.assertTrue(Login.loginAndNavigateToHomePage(), "Successful login - Navigate to Home");
+
+        Assert.assertTrue(Home.isDisplayedUserName());
 
         //softAssert.assertAll();
     }
@@ -97,6 +99,7 @@ public class LoginTest extends TestBase {
     }
 */
 
+/*
 
     @Test(priority = 1)
     public void LoginToApplication() throws Exception {
@@ -112,8 +115,9 @@ public class LoginTest extends TestBase {
         //Navigate to home page
         Assert.assertTrue(Home.isDisplayedUserName());
     }
+*/
 
-    @Test(priority = 2)
+    @Test(priority = 1)
     public void SelectItem() throws Exception {
 
 
@@ -141,7 +145,7 @@ public class LoginTest extends TestBase {
 
     }
 
-    @Test(priority = 3)
+    @Test(priority = 2)
     public void FillCheckoutDetails() {
 
         //Verify First name is displayed
@@ -156,7 +160,7 @@ public class LoginTest extends TestBase {
 
     }
 
-    @Test(priority = 4)
+    @Test(priority = 3)
     public void SelectCreditCardSection() {
 
         //Credit card section
