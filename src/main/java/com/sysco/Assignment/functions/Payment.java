@@ -1,9 +1,7 @@
 package com.sysco.Assignment.functions;
 
-import com.sysco.Assignment.pages.CheckOutPage;
-import com.sysco.Assignment.pages.PaymentPage;
 
-import java.util.Date;
+import com.sysco.Assignment.pages.PaymentPage;
 
 public class Payment {
 
