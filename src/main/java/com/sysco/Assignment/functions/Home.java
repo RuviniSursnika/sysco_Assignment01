@@ -49,10 +49,8 @@ public class Home {
 
 
             int cv = Integer.parseInt(cartValue);
-            System.out.println("CV " + cv);
             System.out.println("There are items in the cart " + cartValue);
             homePage.clickRemoveIcon();
-
             System.out.println("Now there is no any items in the cart");
 
         }
@@ -80,10 +78,10 @@ public class Home {
 
     public static boolean selectSubItemCategory(){
         String subCategory = LoginData.getSubCategory();
-        System.out.println("Actual Subcat "+ subCategory);
+        System.out.println("Actual Sub category is "+ subCategory);
 
         String visibleSubCat = homePage.getSubCategory();
-        System.out.println("Viisble SubCat "+ visibleSubCat);
+        System.out.println("Visible Sub Category is "+ visibleSubCat);
 
         if (subCategory.equalsIgnoreCase(visibleSubCat)) {
             homePage.clickSubCategory();

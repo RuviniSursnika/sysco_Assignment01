@@ -51,13 +51,10 @@ public class HomePage extends PageBase {
 
 
         for (int i = 0; i < element.size(); i++) {
-            System.out.println("Delete");
             syscoLabUIOgm.sleep(5);
             syscoLabUIOgm.click(lblRemove);
-            System.out.println("Clicked Remove icon");
             syscoLabUIOgm.sleep(5);
             syscoLabUIOgm.click(btnOK);
-            System.out.println("Deleted");
         }
 
     }

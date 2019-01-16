@@ -22,9 +22,8 @@ public class CheckOutPage extends PageBase {
 
      public static String setFirstName(){
          syscoLabUIOgm.waitTillElementLoaded(txtFirstName);
-        String firstName = syscoLabUIOgm.getValue(txtFirstName).trim();
-         //System.out.println("FN "+firstName);
-        return firstName;
+         String firstName = syscoLabUIOgm.getValue(txtFirstName).trim();
+         return firstName;
     }
 
     public static String setLastName(){
@@ -35,12 +34,10 @@ public class CheckOutPage extends PageBase {
 
     public void setPostcode(String postCode){
         syscoLabUIOgm.sleep(5);
-        //syscoLabUIOgm.scrollBottom();
         syscoLabUIOgm.scrollToElement(txtPostCode);
         syscoLabUIOgm.click(txtPostCode);
         syscoLabUIOgm.sendKeys(txtPostCode,postCode);
         syscoLabUIOgm.sleep(10);
-        System.out.println("PstCode "+ postCode);
         syscoLabUIOgm.sleep(5);
     }
 
@@ -51,7 +48,6 @@ public class CheckOutPage extends PageBase {
 
         int randomPostCode = randPostCode.nextInt(postCodeList.size());
         postCodeList.get(randomPostCode).click();
-        System.out.println("Post Code is "+randomPostCode);
     }
 
     public void setTelephone(String telephone){
@@ -59,7 +55,6 @@ public class CheckOutPage extends PageBase {
         syscoLabUIOgm.scrollToElement(txtTelephone);
         syscoLabUIOgm.click(txtTelephone);
         syscoLabUIOgm.sendKeys(txtTelephone, telephone);
-        System.out.println("tp "+ telephone);
         syscoLabUIOgm.sleep(10);
     }
 
@@ -68,7 +63,6 @@ public class CheckOutPage extends PageBase {
         syscoLabUIOgm.scrollToElement(txtCompany);
         syscoLabUIOgm.click(txtCompany);
         syscoLabUIOgm.sendKeys(txtCompany, company);
-        System.out.println("Company "+ txtCompany);
         syscoLabUIOgm.sleep(10);
     }
 
@@ -77,7 +71,6 @@ public class CheckOutPage extends PageBase {
         syscoLabUIOgm.scrollToElement(txtAddressLine);
         syscoLabUIOgm.click(txtAddressLine);
         syscoLabUIOgm.sendKeys(txtAddressLine, addressLine);
-        System.out.println("Address Line "+ txtAddressLine);
         syscoLabUIOgm.sleep(10);
     }
 
@@ -96,14 +89,6 @@ public class CheckOutPage extends PageBase {
         else
         return false;
     }
-
-    public void reloadPage(){
-
-         syscoLabUIOgm.refreshBrowser();
-         syscoLabUIOgm.sleep(10);
-    }
-
-
 
 }
 

@@ -10,4 +10,5 @@ public class PaymentPage extends PageBase {
         syscoLabUIOgm.waitTillElementLoaded(btnCreditCard);
         syscoLabUIOgm.click(btnCreditCard);
     }
+
 }

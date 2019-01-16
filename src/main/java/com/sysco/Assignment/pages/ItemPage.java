@@ -24,7 +24,6 @@ public class ItemPage extends PageBase {
 
         Random randItem = new Random();
         int randomItem = randItem.nextInt(itemList.size());
-        System.out.println("a "+randItem.toString());
 
         itemList.get(randomItem).click();
         System.out.println("randomItem "+ randomItem);
@@ -38,7 +37,6 @@ public class ItemPage extends PageBase {
         Random rand = new Random();
         int randomValue = rand.nextInt(sizeList.size());
         sizeList.get(randomValue).click();
-        System.out.println("randomValue "+ randomValue);
 
     }
 

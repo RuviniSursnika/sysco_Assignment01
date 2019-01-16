@@ -21,10 +21,9 @@ public class Item {
      public static boolean isDisplayedMessage(){
 
          String message = loginData.getMessage();
-         System.out.println("Message "+message);
 
         String messageData =  itemPage.searchMessage();
-         System.out.println("MessageData "+messageData);
+         System.out.println("Message is "+messageData);
 
          String itemName = itemPage.searchItem();
 
@@ -53,7 +52,6 @@ public class Item {
         homePage.clickCart();
 
         String searchItemName = itemPage.searchItem();
-
         String displyaedItem = itemPage.searchCartItem();
         System.out.println("diaplyaedItem "+ displyaedItem);
 
@@ -62,16 +60,13 @@ public class Item {
              return true;
          }
          else
-             System.out.println("Item name is does not match");
+             System.out.println("Item name is not correct");
          return false;
 
      }
 
 
      public static void isDisplayedPrice(){
-//         String price = LoginData.price;
-//         System.out.println("price "+price);
-
          String displayedPrice = itemPage.searchPrice();
          System.out.println("displayedPrice "+displayedPrice);
 

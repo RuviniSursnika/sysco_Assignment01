@@ -54,17 +54,15 @@ public class CheckOut {
 
         checkOutPage.setPostcode(postCode);
         checkOutPage.selectPostCode();
-        System.out.println("postCode "+postCode);
+        System.out.println("postCode is "+postCode);
 
         checkOutPage.setTelephone(telephoneNo);
-        System.out.println("TelNo "+ telephoneNo);
+        System.out.println("TelNo is "+ telephoneNo);
 
         checkOutPage.setCompany(company);
         checkOutPage.setAddressLine(address);
 
         checkOutPage.clickBtnContinue();
-        System.out.println("Clicked");
-        checkOutPage.reloadPage();
 
     }
 
